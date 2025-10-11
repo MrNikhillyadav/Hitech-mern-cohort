@@ -1,5 +1,5 @@
 {
-  "name": "oct_1",
+  "name": "oct_8",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,5 +9,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.1"
+  }
 }
