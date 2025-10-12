@@ -1,7 +1,7 @@
+const cors = require('cors');
 const express = require('express')
 const mongoose = require('mongoose');
 const { TodoModel } = require('./model');
-const cors = require('cors');
 
 const app = express()
 
@@ -17,7 +17,6 @@ mongoose.connect(MONGODB_URL)
 })
 
 
-// signup route
 app.post('/signup', async(req,res) => {
   const email = req.body.email;
   const password = req.body.password;
@@ -32,7 +31,6 @@ app.post('/signup', async(req,res) => {
   })
 })
 
-// signin route
 app.post('/signin', async(req,res) => {
   const email = req.body.email;
   const password = req.body.password;
@@ -114,7 +112,6 @@ app.put('/todo/:id', async(req, res) => {
     message :"todo is deleted"
   })
 })
-
 
 app.listen(3000, () => {
   console.log(`Example app listening on port 3000`)
